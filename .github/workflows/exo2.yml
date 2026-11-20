@@ -1,0 +1,14 @@
+name: Exercice 2
+
+on:
+  pull_request:
+    paths:
+      - '**.yml'
+      - '!**/test/**'
+
+jobs:
+  job_ex1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Je vérifie les fichiers YAML"
