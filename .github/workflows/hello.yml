@@ -1,0 +1,14 @@
+name: Exo 1 
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  job_ex1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Je teste l'exo 1"
